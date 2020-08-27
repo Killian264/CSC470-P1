@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.HelloLabel = new System.Windows.Forms.Label();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HelloLabel
@@ -45,11 +46,22 @@
             this.HelloLabel.Text = "Hello World";
             this.HelloLabel.Click += new System.EventHandler(this.label1_Click);
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(219, 127);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(75, 23);
+            this.ExitButton.TabIndex = 1;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // FormHelloWorld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(306, 162);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.HelloLabel);
             this.Name = "FormHelloWorld";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -63,5 +75,6 @@
         #endregion
 
         private System.Windows.Forms.Label HelloLabel;
+        private System.Windows.Forms.Button ExitButton;
     }
 }

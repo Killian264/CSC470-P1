@@ -29,5 +29,10 @@ namespace CSC470_P1_Code
         {
             this.StartPosition = FormStartPosition.CenterScreen;
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
